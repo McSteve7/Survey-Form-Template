@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <title>Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1>Survey Form</h1>
+    </header>
+    <main>
+        <h3>Let us know how we can improve programmingTutuor</h3>
+        <form>
+            <h5>Name: 
+            <input type="text" name="username" size="25" maxlength="40"/>
+            </h5>
+            <h5>Email: 
+                    <input type="email" name="email" size="25" maxlength="40"/>
+            </h5>
+                    <h5>Age: 
+                            <input type="number" name="Age" size="25" maxlength="40"/>
+                    </h5>
+
+                                <h5>Which option best describes your current role?<input list="profession" name="profession">
+                                    <datalist id="profession">
+                                      <option value="Student">
+                                      <option value="Employed">
+                                      <option value="Unemployed">
+                                      <option value="Business Owner">
+                                    </datalist></h5>
+                            
+                                <h5>How likely is that you would recommend programmingTutuor to a friend?
+                                        <li><input type="radio" name="answers" value="definitely"
+                                        checked="checked" /> Definitely</li>
+                                       <li><input type="radio" name="maybe" value="maybe" />
+                                        Maybe
+                                        <li><input type="radio" name="not-sure" value="not-sure" />
+                                        Not Sure</li></h5>
+                                                      
+                                    <h5>What do you like most in FCC<input list="profession" name="profession"> <datalist id="profession">
+                                            <option value="Challenges">
+                                            <option value="Projects">
+                                            <option value="Open Source">
+                                            <option value="Forums">
+                                          </datalist></h5>
+                                
+
+                                        <h5>Things that ahould be improves in the future (Check all that apply):
+                                                <br />
+                                                <li><input type="checkbox" name="service"
+                                                value="feont-end" checked="checked" /> Front-end Projects</li>
+                                                <li><input type="checkbox" name="service"
+                                                value="back-end" /> Back-end Projects</li>
+                                                <li><input type="checkbox" name="service"
+                                                value="Data-visualization" /> Data Visualization</li>
+                                                <li><input type="checkbox" name="service"
+                                                value="Challenges" /> Challenges</li>
+                                                <li><input type="checkbox" name="service"
+                                                value="git" /> Git</li>
+                                                <li><input type="checkbox" name="service"
+                                                value="open-source" /> Open Source Community</li>
+                                                <li><input type="checkbox" name="service"
+                                                value="Videos" /> Videos</li>
+                                                <li><input type="checkbox" name="service"
+                                                value="Wiki" /> Wiki</li>
+                                                <li><input type="checkbox" name="service"
+                                                value="Forum" /> Forum</li>
+                                                </h5>
+
+                                                <h3 id="comments">Any Comments or Suggestions?
+                                                <textarea id="text-area" name="comments" cols="30" rows="3">Enter
+                                                your comments...</textarea></h3>    
+                                                <button id="form-button">Submit</button>
+                            </form>
+
+    </main>
+    <footer>&copy Damilola Ajiboye 2018</footer>
+</body>
+</html>
